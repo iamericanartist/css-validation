@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>Bank AmERICa</title>
+  	<link rel="stylesheet" href="validation.css">
+  </head>
+  <body>
+    <header>
+      <h1>Bank AmERICa</h1>
+      <h3>Banks for the Memories</h3>
+    </header>
+    <section>
+      <p><b>Welcome to Bank AmERICa.</b> We have your best interests in mind. We promise. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum mollitia ut odio, consequatur ex accusamus nam. Exercitationem laborum, doloremque ut quo, ratione incidunt maxime pariatur est, quisquam dolorem soluta corporis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, illum, autem assumenda culpa deserunt tenetur aperiam. Rerum quam, suscipit obcaecati labore laborum, eligendi quaerat maxime nisi ipsum dolores molestiae magnam! STACKS ON STACKS!</p>
+    </section>
+    <h3>Loan Sign Up</h3>
+    <div class="form">
+
+<!-- fieldset for PERSONAL INFORMATION 1-4 -->
+      <fieldset id="name" class="form">
+        <legend>Your Information</legend>
+        <input type="text" required id="firstName" name="user_first_name" placeholder="First Name">
+        <input type="text" id="middleInitial" name="user_middle_initial" placeholder="M.I." size=5>
+        <input type="text" id="lastName" name="user_last_name" placeholder="Last Name">
+        <p>
+        <input type="text" id="address" name="homeAddress" placeholder="Current Home Address" size=40>
+        <input type="text" id="address2" name="homeAddress2" placeholder="City, State ZIP" size=40>
+        </p>
+      </fieldset>
+
+<!-- fieldset for LOAN AMMOUNT 5-7 -->
+      <fieldset id="employer" class="form">
+        <legend>Employer Information</legend>
+        <input type="text" id="occupation" name="occupation" placeholder="Occupation">
+        <p>
+        <input type="text" id="employer" name="employer" placeholder="Employer">
+        <input type="text" id="workAddress" name="workAddress" placeholder="Work Address" size=40>
+        <input type="text" id="workaddress2" name="workAddress2" placeholder="City, State ZIP" size=40>
+        </p>
+      </fieldset>
+
+
+<!-- fieldset for LOAN AMMOUNT 8,9(I-IV) -->
+      <fieldset id="loanInfo" class="form">
+        <legend>Loan Information</legend> 
+        <label for="Type of Loan">Loan Type:</label>
+          <select name="loanType" id="loanType">
+            <option value="">Select Loan Type</option>
+            <option value="commercial">Commercial</option>
+            <option value="realestate">Real Estate</option>
+            <option value="personal">Personal</option>
+            <option value="mortgage">Mortgate</option>
+          </select>
+        <label for="amount">Loan Amount: $</label>
+        <input type="number" name="amount" id="amount" value="100000" placeholder="100000" step="10000" />
+      </fieldset>
+
+<!-- fieldset for Loan Length 10(I-III)  -->
+      <fieldset id="loanLength" class="form">
+        <legend>Loan Length Preferred</legend> 
+        <input type="radio" name="radio"> <label for="radio">5 Years</label>
+        <input type="radio" name="radio"> <label for="radio">15 Years</label>
+        <input type="radio" name="radio"> <label for="radio">30 Years</label>
+      </fieldset>        
+
+<!-- fieldset for Checkboxes 11(I-IV)  -->
+      <fieldset id="loanLength" class="form">
+        <legend>Loan Length Preferred</legend> 
+        <input type="checkbox" name="downpmt"> <label for="checkbox">I have a down payment!</label>
+        <input type="checkbox" name="outofstate"> <label for="checkbox">Out-of-state Resident</label>
+        <input type="checkbox" name="married"> <label for="checkbox">Married</label>
+        <input type="checkbox" name="cosigned"> <label for="checkbox">Loan will be co-signed</label>
+      </fieldset>     
+
+<!-- fieldset for Comments/Contact 12-15  -->
+      <fieldset id="contact-form" action="index.html" method="post">
+        <legend>Additional Comments / Contact Info</legend>
+        <ul>
+            <li>
+                <label for="comments">Add Comments:</label>
+                <input type="textarea" name="comments" id="comments" value="" placeholder="Please add any pertinent information you would like to share with us here..." size=70>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="" placeholder="you@youremail.com" size=40 required>
+            </li> 
+            <li>
+                <label for="phonenum">Phone:</label>
+                <input type="tel" id="phone" value="" 
+                placeholder="6151234567" 
+                pattern="\d{10}"
+                size=40 required> 
+            </li>   
+            <li>
+                <label for="url">LinkedIn Profile:</label>
+                <input type="url" name="url" id="url" value="" placeholder="Your LinkedIn url" size=40 pattern="https?://.+" required>
+            </li>
+        </ul>
+      </fieldset>
+     
+ <!-- NOT NEEDED? YET?
+      <div>
+        <input type="submit" value="Submit"> 
+      </div>
+ -->
+    </div>
+    <footer>
+  </body>
+</html>

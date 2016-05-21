@@ -1,0 +1,48 @@
+body {
+	background-color: #eee;
+	font-family: Tahoma;
+	color: #111;
+}
+
+/*when valid url = green field*/
+input[type="tel"]:valid {
+  background: lightgreen;
+}
+input[type="url"]:valid {
+  background: lightgreen;
+}
+
+/*when invalid url = red field*/
+input[type="tel"]:invalid {
+  background: red;
+}
+input[type="url"]:invalid {
+  background: red;
+}
+
+/*for the life of me I can't figure out 
+  how to keep the field white without javascript? */
+
+/* Just for practice */
+label, input, fieldset{
+	font-size: 14px;
+	padding: 1px 3px;
+	border-radius: 5px;
+	margin: 2px 1px 4px 5px;   
+}
+fieldset {
+	font-size: 16px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  margin: 5px 8px;	
+}
+
+/* for button if needed*/
+/*input[type="submit"] {
+  font-weight: bold;
+  padding: 4px 15px;
+  margin: 5px 1px 5px 4px;
+  border: 1px solid #666;
+  background: lightgrey;
+  color: slategrey;
+}*/
