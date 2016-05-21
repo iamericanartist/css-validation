@@ -1,7 +1,7 @@
 body {
-	background-color: #eee;
-	font-family: Tahoma;
-	color: #111;
+  background-color: #eee;
+  font-family: Tahoma;
+color: #111;
 }
 
 /*when valid url = green field*/
@@ -25,13 +25,13 @@ input[type="url"]:invalid {
 
 /* Just for practice */
 label, input, fieldset{
-	font-size: 14px;
-	padding: 1px 3px;
-	border-radius: 5px;
-	margin: 2px 1px 4px 5px;   
+  font-size: 14px;
+  padding: 1px 3px;
+  border-radius: 5px;
+  margin: 2px 1px 4px 5px;   
 }
 fieldset {
-	font-size: 16px;
+  font-size: 16px;
   padding: 2px 4px;
   border-radius: 6px;
   margin: 5px 8px;	
